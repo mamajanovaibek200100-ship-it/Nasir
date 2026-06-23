@@ -1,0 +1,221 @@
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Основной стиль сайта */
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Шапка */
+header {
+    background: #0d1117;
+    border-bottom: 2px solid #dc143c;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+
+/* Заголовок */
+header h1 {
+    color: #FF00FF;
+    margin-bottom: 10px;
+}
+
+
+/* Навигация */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #dc143c;
+}
+
+
+/* Главный экран */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+
+
+    animation: fadeIn 1.5s;
+}
+
+
+.hero h2 {
+    color: #dc143c;
+    font-size: 40px;
+}
+
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+
+/* Кнопки */
+button {
+    background: #dc143c;
+    color: black;080;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #dc143c;
+}
+
+
+/* Секции */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+
+section h2 {
+    color: #dc143c;
+    margin-bottom: 20px;
+}
+
+
+/* Список */
+ul {
+    margin-left: 25px;
+}
+
+
+/* Галерея */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #dc143c;
+
+
+    transition: 0.4s;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #dc143c;
+}
+
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+th {
+    background: #dc143c;
+    color: black;
+}
+
+
+td,
+th {
+    border: 1px solid #;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dc143c;
+    background: #111;
+    color: white;
+}
+
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d1117;
+    border-top: 2px solid #dc143c;
+}
+
+
+/* Анимация появления */
+@keyframes fadeIn {
+
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

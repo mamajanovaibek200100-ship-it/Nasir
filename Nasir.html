@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Чарьлз Оливейра</title>
+
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="Nasir.css">
+</head>
+
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Чарьлз Оливейра</h1>
+        
+
+        <!-- Меню навигации -->
+        <nav>
+            <ul>
+                <li><a href="#about">О персонаже</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#facts">Факты</a></li>
+                <li><a href="#feedback">Отзыв</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Главный экран -->
+    <section class="hero">
+
+
+        <h2>Чарльз Оливейра величайший финишер в истории UFC и непревзойденный мастер бразильского джиу-джитсу (BJJ)</h2>
+
+
+        <p>
+            Чарльз Оливейра -
+            Бразильский боец смешанных единоборств 
+        
+        </p>
+
+
+        <button onclick="showInfo()">
+            Узнать интересный факт
+        </button>
+
+
+    </section>
+
+
+    <!-- Информация -->
+    <section id="about">
+
+
+        <h2>О персонаже</h2>
+
+
+        <p>
+           Бывший чемпион UFC в легком весе, который в настоящее время владеет титулом BMF. <br>
+           Он считается одним из величайших мастеров BJJ в истории смешанных единоборств и удерживает абсолютный рекорд UFC по количеству побед сабмишенами.
+        </p>
+
+
+        <h3>Особенности персонажа:</h3>
+
+
+        <ul>
+            <li>Экстремальная агрессия в партере</li>
+            <li>Активная защита</li>
+            <li>Быстрый транзит</li>
+            <li>Отсутствие страха</li>
+        </ul>
+
+
+        <p>
+            Подробнее можно прочитать на
+            <a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%BB%D0%B8%D0%B2%D0%B5%D0%B9%D1%80%D0%B0,_%D0%A7%D0%B0%D1%80%D0%BB%D1%8C%D0%B7"
+               target="_blank">
+                сайте: Чарльз Оливейра wikipedia
+            </a>.
+        </p>
+
+
+    </section>
+
+
+    <!-- Галерея -->
+    <section id="gallery">
+
+
+        <h2>Галерея</h2>
+
+
+        <div class="gallery">
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRqBU3cGRNnRERpKTmsQyPXe4gqIksqHAO4YQ7Np0BEOI0nyeapMrbj6lN5Lwl7-iRPVdW5ceZkAxm9F7DT1dfzVwuH5ePw9BUv9otn_W5OMTHe1x2ZNwps-EE20BM4Sdro2uAaUJvv07Q&s=19" alt="Чарльз Оливейра">
+            </div>
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-DIK5S0yZQJAZzo281fnV0-XbIRiPxtN2H9n0bn-JA&s=10" alt="Чарльз Оливейра">
+            </div>
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFlbxywX_aMVtW8ESyKRlzQlvC42YYzwlGIeldkMiOg&s=10" alt="Чарльз Оливейра">
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Таблица -->
+    <section id="facts">
+
+
+        <h2>Информация о персонаже</h2>
+
+
+        <table>
+
+
+            <tr>
+                <th>Характеристика</th>
+                <th>Бывший чемпион UFC</th>
+            </tr>
+
+
+            <tr>
+                <td>Имя</td>
+                <td>Чарльз Оливейра</td>
+            </tr>
+
+
+            <tr>
+                <td>Профессия</td>
+                <td>Боец смешанных единоборств</td>
+            </tr>
+
+
+            <tr>
+                <td>Любимая еда</td>
+                <td>Курица по-пармезански</td>
+            </tr>
+
+
+            <tr>
+                <td>Вселенная</td>
+                <td>UFC</td>
+            </tr>
+
+
+        </table>
+
+
+    </section>
+
+
+    <!-- Форма -->
+    <section id="feedback">
+
+
+        <h2>Оставить отзыв</h2>
+
+
+        <form>
+
+
+            <input
+                type="text"
+                placeholder="Введите имя"
+                required>
+
+
+            <input
+                type="email"
+                placeholder="Введите email"
+                required>
+
+
+            <textarea
+                placeholder="Ваш отзыв"
+                rows="5">
+            </textarea>
+
+
+            <button type="submit">
+                Отправить
+            </button>
+
+
+        </form>
+
+
+    </section>
+
+
+    <!-- Подвал -->
+    <footer>
+
+
+        <p>
+            © 2026 Фан-сайт Чарьлза Оливейры, бразильского бойца смешанных единоборств.
+        </p>
+
+
+    </footer>
+
+
+    <script>
+        function showInfo() {
+            alert(
+                "Стал обладателем абсолютного рекорда UFC по досрочным победам (включая наибольшее количество побед сабмишеном — 17) и завоевал пояс чемпиона."
+            );
+        }
+    </script>
+
+</body>
+</html>
